@@ -1,0 +1,250 @@
+{
+  "title": "Gestione delle richieste di manutenzione del verde",
+  "description": "Prototipo per registrare, filtrare e monitorare richieste di manutenzione del verde pubblico, con priorità e quartiere. Tutti i dati sono inventati.",
+  "accent": "emerald",
+  "pages": [
+    {
+      "id": "dashboard",
+      "title": "Panoramica",
+      "description": "Riepilogo delle richieste e delle attività di manutenzione.",
+      "metrics": [
+        {
+          "label": "Richieste aperte",
+          "value": "18"
+        },
+        {
+          "label": "Priorità alta",
+          "value": "4"
+        },
+        {
+          "label": "In lavorazione",
+          "value": "7"
+        },
+        {
+          "label": "Completate questo mese",
+          "value": "12"
+        }
+      ],
+      "columns": [
+        "Quartiere",
+        "Richieste aperte",
+        "Priorità alta",
+        "In lavorazione"
+      ],
+      "rows": [
+        [
+          "Lumo",
+          "5",
+          "1",
+          "2"
+        ],
+        [
+          "Vela",
+          "4",
+          "1",
+          "2"
+        ],
+        [
+          "Nubi",
+          "6",
+          "1",
+          "2"
+        ],
+        [
+          "Riva",
+          "3",
+          "1",
+          "1"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "richieste",
+      "title": "Richieste",
+      "description": "Elenco filtrabile delle segnalazioni di manutenzione del verde.",
+      "metrics": [],
+      "columns": [
+        "Codice",
+        "Quartiere",
+        "Area verde",
+        "Intervento richiesto",
+        "Priorità",
+        "Stato",
+        "Data segnalazione"
+      ],
+      "rows": [
+        [
+          "RV-021",
+          "Lumo",
+          "Giardino delle Lanterne",
+          "Potatura di siepi",
+          "Alta",
+          "Aperta",
+          "2025-04-03"
+        ],
+        [
+          "RV-022",
+          "Vela",
+          "Parco dei Sussurri",
+          "Raccolta rami caduti",
+          "Media",
+          "In lavorazione",
+          "2025-04-04"
+        ],
+        [
+          "RV-023",
+          "Nubi",
+          "Viale delle Felci",
+          "Ripristino irrigazione",
+          "Alta",
+          "Aperta",
+          "2025-04-05"
+        ],
+        [
+          "RV-024",
+          "Riva",
+          "Orto delle Nuvole",
+          "Sfalcio prato",
+          "Bassa",
+          "Completata",
+          "2025-04-06"
+        ],
+        [
+          "RV-025",
+          "Lumo",
+          "Parco delle Brume",
+          "Controllo alberature",
+          "Media",
+          "In lavorazione",
+          "2025-04-07"
+        ],
+        [
+          "RV-026",
+          "Vela",
+          "Giardino dei Riflessi",
+          "Potatura alberi",
+          "Alta",
+          "Aperta",
+          "2025-04-08"
+        ],
+        [
+          "RV-027",
+          "Nubi",
+          "Bosco dei Campanelli",
+          "Rimozione vegetazione infestante",
+          "Media",
+          "Aperta",
+          "2025-04-09"
+        ],
+        [
+          "RV-028",
+          "Riva",
+          "Parco delle Conchiglie",
+          "Riparazione impianto irriguo",
+          "Bassa",
+          "In lavorazione",
+          "2025-04-10"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "nuova-richiesta",
+      "title": "Nuova richiesta",
+      "description": "Registra una richiesta specificando luogo, intervento e priorità.",
+      "metrics": [],
+      "columns": [
+        "Quartiere",
+        "Area verde",
+        "Intervento richiesto",
+        "Priorità",
+        "Stato"
+      ],
+      "rows": [],
+      "form": [
+        "Quartiere",
+        "Area verde",
+        "Intervento richiesto",
+        "Priorità",
+        "Stato"
+      ]
+    },
+    {
+      "id": "interventi",
+      "title": "Interventi",
+      "description": "Pianificazione e avanzamento degli interventi assegnati.",
+      "metrics": [
+        {
+          "label": "Interventi pianificati",
+          "value": "9"
+        },
+        {
+          "label": "In corso",
+          "value": "5"
+        },
+        {
+          "label": "Conclusi",
+          "value": "6"
+        }
+      ],
+      "columns": [
+        "Codice intervento",
+        "Quartiere",
+        "Area verde",
+        "Attività",
+        "Priorità",
+        "Stato",
+        "Data prevista"
+      ],
+      "rows": [
+        [
+          "IV-031",
+          "Lumo",
+          "Giardino delle Lanterne",
+          "Potatura di siepi",
+          "Alta",
+          "Pianificato",
+          "2025-04-14"
+        ],
+        [
+          "IV-032",
+          "Vela",
+          "Parco dei Sussurri",
+          "Raccolta rami",
+          "Media",
+          "In corso",
+          "2025-04-15"
+        ],
+        [
+          "IV-033",
+          "Nubi",
+          "Viale delle Felci",
+          "Verifica irrigazione",
+          "Alta",
+          "Pianificato",
+          "2025-04-16"
+        ],
+        [
+          "IV-034",
+          "Riva",
+          "Orto delle Nuvole",
+          "Sfalcio prato",
+          "Bassa",
+          "Concluso",
+          "2025-04-11"
+        ],
+        [
+          "IV-035",
+          "Lumo",
+          "Parco delle Brume",
+          "Controllo alberature",
+          "Media",
+          "In corso",
+          "2025-04-17"
+        ]
+      ],
+      "form": []
+    }
+  ]
+}
